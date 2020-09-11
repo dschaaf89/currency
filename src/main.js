@@ -18,6 +18,9 @@ $(document).ready(function () {
         const response = JSON.parse(this.responseText);
         getElements(response, money, currency);
         $('#resultsbox').show();
+      }else{
+        reject(request.response);
+        
       }
     };
   });
