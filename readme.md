@@ -19,7 +19,7 @@ _This program allows the user to choose from a drop down of 5 different countrie
 * _in terminal do command npm run start_
 
 
-_To generate an api key to use the api's go to https://www.exchangerate-api.com/. Generate a key following their instructions and enter the key into the .env file as listed above._
+_To generate an api key go to https://www.exchangerate-api.com/. Generate a key following their instructions and enter the key into the .env file as listed above._
 
 ## Known Bugs
 
