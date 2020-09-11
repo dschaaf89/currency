@@ -2,11 +2,13 @@ import $ from 'jquery';
 import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './css/styles.css';
-import { getElementsCanada } from './js/service-logic.js';
+import { getElements } from './js/service-logic.js';
 $(document).ready(function () {
 
-  $('#Canada').click(function () {
+  $('#currencyType').click(function () {
     event.preventDefault();
+    let currency =$('#typeOfCurrency').val();
+    console.log(currency);
     let money = $('#money').val();
     let url = `https://v6.exchangerate-api.com/v6/${process.env.API_KEY}/latest/USD`;
     let request = new XMLHttpRequest();
@@ -15,7 +17,7 @@ $(document).ready(function () {
     request.onreadystatechange = function () {
       if (this.readyState === 4 && this.status === 200) {
         const response = JSON.parse(this.responseText);
-        getElementsCanada(response, money);
+        getElements(response, money, currency);
       }
     };
   });
