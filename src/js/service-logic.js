@@ -1,11 +1,10 @@
- import $ from 'jquery';
+import $ from 'jquery';
 
 export function getElements(response, money, currency) {
   let type = currency;
   if (type === "CAD") {
     $('#results').text(`you can convert your currency into ${response.conversion_rates.CAD * `${money}`}`);
-    console.log(`${response.conversion_rates.CAD *`${money}`}`);
-  } else if (type === "AED"){
+  } else if (type === "AED") {
     $('#results').text(`you can convert your currency into ${response.conversion_rates.AED * `${money}`}`);
   } else if (type === "ARS") {
     $('#results').text(`you can convert your currency into ${response.conversion_rates.ARS * `${money}`}`);
@@ -20,7 +19,7 @@ export function getElements(response, money, currency) {
 
 // static convertRates(response,money,currency){
 //   return (response.conversion.`${currency}` * `${money})`;
-  
+
 // }
 // }
 
