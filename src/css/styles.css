@@ -9,10 +9,21 @@ body{
   margin-left: auto;
   margin-right: auto;
   border: 50% solid black;
-  margin-top: 5%;
-  margin-bottom: 5%;
+  margin-top: 2%;
+  margin-bottom: 1%;
   box-shadow: 0 8px 24px 0 black;
-  width: 95%;
+  width: 40%;
   border-radius: 5%;
 }
 
+#welcome{
+  background-color: silver;
+  border-radius: 5%;
+
+}
+
+#calculator{
+  width: 50%;
+  margin-left: 25%;
+  background-color: silver;
+}
