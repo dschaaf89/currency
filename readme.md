@@ -23,7 +23,7 @@ _To generate an api key go to https://www.exchangerate-api.com/. Generate a key 
 
 ## Known Bugs
 
-_no known bugs_
+_error handling is not working_
 
 ## Support and contact details
 
