@@ -3,7 +3,7 @@ import $ from 'jquery';
 export function getElements(response, money, currency) {
   let type = currency;
   if (type === "CAD") {
-    $('#results').text(`you can convert your currency into ${response.conversion_rates.CAD * `${money}`}`);
+    $('#results').text(`you can convert your currency into ${response.conversion_rates.CAD * `${money}`} dollars`);
   } else if (type === "AED") {
     $('#results').text(`you can convert your currency into ${response.conversion_rates.AED * `${money}`}`);
   } else if (type === "ARS") {
