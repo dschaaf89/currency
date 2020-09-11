@@ -1,0 +1,21 @@
+body{
+  background-color: beige;
+}
+.jumbotron{
+  background-color: skyblue;
+}
+#money{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border: 50% solid black;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  box-shadow: 0 8px 24px 0 black;
+  width: 95%;
+  border-radius: 5%;
+}
+#calculator{
+  align: center;
+  width: 75%;
+}
