@@ -3,6 +3,7 @@ export function getElements(response, money, currency) {
   let type = currency;
   if (type === "CAD") {
     $('#results').text(`you can convert your currency into ${response.conversion_rates.CAD * `${money}`}`);
+    console.log(`${response.conversion_rates.CAD *`${money}`}`);
   } else if (type === "AED"){
     $('#results').text(`you can convert your currency into ${response.conversion_rates.AED * `${money}`}`);
   } else if (type === "ARS") {
@@ -13,6 +14,7 @@ export function getElements(response, money, currency) {
     $('#results').text(`you can convert your currency into ${response.conversion_rates.EUR * `${money}`}`);
   }
 }
+
 
 
 // }

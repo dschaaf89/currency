@@ -8,7 +8,6 @@ $(document).ready(function () {
   $('#currencyType').click(function () {
     event.preventDefault();
     let currency =$('#typeOfCurrency').val();
-    console.log(currency);
     let money = $('#money').val();
     let url = `https://v6.exchangerate-api.com/v6/${process.env.API_KEY}/latest/USD`;
     let request = new XMLHttpRequest();
