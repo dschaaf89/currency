@@ -1,11 +1,5 @@
-import $ from 'jquery';
-export default class Exchange {
+ import $ from 'jquery';
 
-static convertRates(response,money,currency){
-  return response.conversion.`${currency}` * `${money}`
-  
-}
-}
 export function getElements(response, money, currency) {
   let type = currency;
   if (type === "CAD") {
@@ -22,7 +16,13 @@ export function getElements(response, money, currency) {
   }
 }
 
+// export default class Exchange {
 
+// static convertRates(response,money,currency){
+//   return (response.conversion.`${currency}` * `${money})`;
+  
+// }
+// }
 
 // }
 
